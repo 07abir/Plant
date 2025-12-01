@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Information Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Plant Information Guide</h1>
+        
+        <div class="plant-card" id="plantCard">
+            <div class="plant-image-container">
+                <img id="plantImage" src="" alt="Plant Image" class="plant-image">
+            </div>
+            
+            <div class="plant-info">
+                <div class="plant-header">
+                    <h2 id="genericName" class="generic-name"></h2>
+                    <p id="scientificName" class="scientific-name"></p>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-box green">
+                        <p class="info-label">Group</p>
+                        <p id="group" class="info-value"></p>
+                    </div>
+                    
+                    <div class="info-box blue">
+                        <p class="info-label">Soil pH</p>
+                        <p id="soilPH" class="info-value"></p>
+                    </div>
+                    
+                    <div class="info-box yellow">
+                        <p class="info-label">Season</p>
+                        <p id="season" class="info-value"></p>
+                    </div>
+                    
+                    <div class="info-box purple">
+                        <p class="info-label">Life Span</p>
+                        <p id="lifeSpan" class="info-value"></p>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <p class="section-label">Available Area</p>
+                    <p id="availableArea" class="section-value"></p>
+                </div>
+                
+                <div class="info-section">
+                    <p class="section-label">Description</p>
+                    <p id="description" class="section-value description"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prevBtn" class="nav-button" aria-label="Previous plant">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            
+            <div id="counter" class="counter"></div>
+            
+            <button id="nextBtn" class="nav-button" aria-label="Next plant">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+        
+        <div id="indicators" class="indicators"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
